@@ -58,7 +58,7 @@ The dashboard tracks the following performance metrics:
 
 ## Dashboard Preview
 
-![Main Dashboard](Dashboard_images/Main Dashboard.png)
+![Main Dashboard](Dashboard_images/main_dashboard.png)
 
 ---
 
