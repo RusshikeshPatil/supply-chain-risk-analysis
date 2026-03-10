@@ -66,12 +66,50 @@ The dashboard tracks the following performance metrics:
 ## SQL Example Queries
 
 ```sql
-SELECT COUNT(*) 
-FROM shipments;
-
-SELECT Transport_Mode, COUNT(*) AS total_shipments
+-- Geopolitical Risk Analysis
+SELECT 
+CASE 
+WHEN Geopolitical_Risk_Score < 3 THEN 'Low Risk'
+WHEN Geopolitical_Risk_Score < 6 THEN 'Medium Risk'
+ELSE 'High Risk'
+END AS risk_level,
+COUNT(*) AS shipments,
+AVG(Lead_Time_Days) AS avg_lead_time,
+SUM(Disruption_Occurred)/COUNT(*)*100 AS disruption_rate
 FROM shipments
-GROUP BY Transport_Mode;
+GROUP BY risk_level;
+
+-- Carrier Performance
+SELECT 
+Carrier_Reliability_Score,
+AVG(Lead_Time_Days) AS avg_lead_time,
+SUM(Disruption_Occurred)/COUNT(*)*100 AS disruption_rate
+FROM shipments
+GROUP BY Carrier_Reliability_Score
+ORDER BY Carrier_Reliability_Score DESC;
+
+-- Route Analysis
+SELECT 
+Origin_Port,
+Destination_Port,
+COUNT(*) AS shipments,
+SUM(Disruption_Occurred) AS disruptions
+FROM shipments
+GROUP BY Origin_Port, Destination_Port
+ORDER BY disruptions DESC
+LIMIT 10;
+
+-- Distance Impact
+SELECT 
+CASE
+WHEN Distance_km < 2000 THEN 'Short'
+WHEN Distance_km < 8000 THEN 'Medium'
+ELSE 'Long'
+END AS distance_category,
+AVG(Lead_Time_Days) AS avg_lead_time,
+SUM(Disruption_Occurred)/COUNT(*)*100 AS disruption_rate
+FROM shipments
+GROUP BY distance_category;
 ```
 
 ---
