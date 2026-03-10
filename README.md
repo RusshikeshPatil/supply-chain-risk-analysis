@@ -52,7 +52,8 @@ The dashboard tracks the following performance metrics:
 - Average Delivery Lead Time  
 - Shipment Disruption Rate  
 - Average Carrier Reliability Score  
-- On-Time Delivery Rate  
+- On-Time Delivery Rate
+  ![KPi's](Dashboard_images/KPi's.png)
 
 ---
 
