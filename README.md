@@ -69,15 +69,15 @@ Key findings from the analysis:
 
 ## Dashboard Preview
 
-Add your dashboard screenshot here.
 
-```
-dashboard_images/dashboard.png
+
+
+Dashboard_images/Main Dashboard.png
 ```
 
 Example:
 
-![Dashboard](Dashboard_images/Main Dashboard.png)
+[Dashboard](Dashboard_images/Main Dashboard.png)
 
 ---
 
