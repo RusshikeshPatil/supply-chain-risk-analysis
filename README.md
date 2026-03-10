@@ -56,28 +56,17 @@ The dashboard tracks the following performance metrics:
 
 ---
 
-## Dashboard Insights
-
-Key findings from the analysis:
-
-- **Sea transport shows the highest delivery lead times**
-- **Weather conditions significantly influence shipment disruptions**
-- **High geopolitical risk regions experience longer delivery delays**
-- **Air transport provides the fastest delivery even for long distances**
-
----
-
 ## Dashboard Preview
 
+Add your dashboard screenshot here.
 
-
-
-Dashboard_images/Main Dashboard.png
+```
+dashboard_images/dashboard.png
 ```
 
 Example:
 
-[Dashboard](Dashboard_images/Main Dashboard.png)
+![Dashboard](dashboard_images/dashboard.png)
 
 ---
 
