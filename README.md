@@ -77,7 +77,7 @@ dashboard_images/dashboard.png
 
 Example:
 
-![Dashboard](dashboard_images/dashboard.png)
+![Dashboard](Dashboard_images/Main Dashboard.png)
 
 ---
 
