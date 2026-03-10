@@ -119,17 +119,20 @@ GROUP BY distance_category;
 ```
 supply-chain-risk-analysis
 │
-├── data
+├── Data
 │   global_supply_chain_risk_2026.csv
 │
-├── sql
+├── SQL
 │   analysis_queries.sql
 │
-├── powerbi
+├── Power Bi
 │   supply_chain_dashboard.pbix
 │
-├── dashboard_images
-│   dashboard.png
+├── Dashboard_images
+│   main_dashboard.png
+│
+├── Report
+│   supply_chain_risk_analysis_project.pdf
 │
 └── README.md
 ```
