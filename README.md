@@ -58,15 +58,7 @@ The dashboard tracks the following performance metrics:
 
 ## Dashboard Preview
 
-Add your dashboard screenshot here.
-
-```
-dashboard_images/dashboard.png
-```
-
-Example:
-
-![Dashboard](dashboard_images/dashboard.png)
+![Main Dashboard](Dashboard_images/Main Dashboard.png)
 
 ---
 
